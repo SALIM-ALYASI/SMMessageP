@@ -10,6 +10,7 @@ var loadingView: UIView = UIView()
         container.center = view.center
         container.backgroundColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 0.5089798479)
         Label.text = title
+        Label.font = Label.font.withSize(20)
         loadingView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         loadingView.center = view.center
         loadingView.backgroundColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)

@@ -1,10 +1,9 @@
 //
-//  File.swift
+//  ActivityIndicatorView.swift
 //  
 //
-//  Created by الياسي on 03/07/2021.
+//  Created by الياسي on 05/07/2021.
 //
-
 import UIKit
 
 @IBDesignable
@@ -16,7 +15,7 @@ class ActivityIndicatorView: UIView {
     
     @IBInspectable var trackColor: UIColor = .clear { didSet { setNeedsDisplay() } }
     @IBInspectable var activityIndicatorColor: UIColor = .darkGray { didSet { setNeedsDisplay() } }
-    @IBInspectable var lineWidth: CGFloat = 7 { didSet { setNeedsDisplay() } }
+    @IBInspectable var lineWidth: CGFloat = 5 { didSet { setNeedsDisplay() } }
     
     /// The style of animation the view performs when animating
     var animationStyle: AnimationStyle = .extendable

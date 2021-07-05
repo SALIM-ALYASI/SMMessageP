@@ -12,7 +12,7 @@ public class Downloadingpictures: UIView {
      let activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
     let activityIndicator2: ActivityIndicatorView = ActivityIndicatorView()
    var container: UIView = UIView()
-    static let instance = Downloadingpictures()
+    private let instance = Downloadingpictures()
     let Label : UILabel = UILabel()
  
     override init(frame: CGRect) {

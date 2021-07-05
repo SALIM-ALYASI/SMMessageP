@@ -15,10 +15,10 @@
 import Foundation
 import UIKit
 
-class Downloadingpictures: UIView {
+class SMMessageView: UIView {
     let activityIndicator: ActivityIndicatorView = ActivityIndicatorView()
    var container: UIView = UIView()
-    static let instance = Downloadingpictures()
+    static let instance = SMMessageView()
     let Label : UILabel = UILabel()
  
     override init(frame: CGRect) {
@@ -92,6 +92,4 @@ class CustomView: UIView {
     }
     
 }
-class ClassA : NSObject {
-    @objc func test() {print(5)}
-}
+ 

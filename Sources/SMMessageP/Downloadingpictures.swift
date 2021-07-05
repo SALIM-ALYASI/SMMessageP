@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class Downloadingpictures: UIView {
+public class Downloadingpictures: UIView {
      let activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
     let activityIndicator2: ActivityIndicatorView = ActivityIndicatorView()
    var container: UIView = UIView()
@@ -87,7 +87,7 @@ class Downloadingpictures: UIView {
         container.autoresizingMask = [.flexibleHeight, .flexibleWidth]
     }
  
-    func showAlertFormactivityIndicator(_ title: String) {
+    private func showAlertFormactivityIndicator(_ title: String) {
     self.Label.text = title
         formactivityIndicator()
     UIApplication.shared.keyWindow?.addSubview(container)
@@ -98,7 +98,7 @@ class Downloadingpictures: UIView {
         cercle()
     UIApplication.shared.keyWindow?.addSubview(container)
     }
-    func stop() {
+    private  func stop() {
         DispatchQueue.main.async {
           self.activityIndicator.stopAnimating()
           self.container.removeFromSuperview()

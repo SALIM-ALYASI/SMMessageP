@@ -10,11 +10,11 @@ import UIKit
 
 public class Downloadingpictures: UIView {
     public init() {}
-     let activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
-    let activityIndicator2: ActivityIndicatorView = ActivityIndicatorView()
-   var container: UIView = UIView()
-   let instance = Downloadingpictures()
-    let Label : UILabel = UILabel()
+    public let activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
+    public  let activityIndicator2: ActivityIndicatorView = ActivityIndicatorView()
+    public var container: UIView = UIView()
+    public  let instance = Downloadingpictures()
+    public let Label : UILabel = UILabel()
  
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -88,13 +88,13 @@ public class Downloadingpictures: UIView {
         container.autoresizingMask = [.flexibleHeight, .flexibleWidth]
     }
  
-     func showAlertFormactivityIndicator(_ title: String) {
+    private func showAlertFormactivityIndicator(_ title: String) {
     self.Label.text = title
         formactivityIndicator()
     UIApplication.shared.keyWindow?.addSubview(container)
     }
 
-    func showAlertcCercle(title: String) {
+    private func showAlertcCercle(title: String) {
     self.Label.text = title
         cercle()
     UIApplication.shared.keyWindow?.addSubview(container)

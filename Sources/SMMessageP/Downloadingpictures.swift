@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 public class Downloadingpictures: UIView {
+    public init() {}
      let activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
     let activityIndicator2: ActivityIndicatorView = ActivityIndicatorView()
    var container: UIView = UIView()

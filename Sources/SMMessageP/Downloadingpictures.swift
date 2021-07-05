@@ -12,7 +12,7 @@ public class Downloadingpictures: UIView {
      let activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
     let activityIndicator2: ActivityIndicatorView = ActivityIndicatorView()
    var container: UIView = UIView()
-    private let instance = Downloadingpictures()
+   let instance = Downloadingpictures()
     let Label : UILabel = UILabel()
  
     override init(frame: CGRect) {
@@ -87,7 +87,7 @@ public class Downloadingpictures: UIView {
         container.autoresizingMask = [.flexibleHeight, .flexibleWidth]
     }
  
-    private func showAlertFormactivityIndicator(_ title: String) {
+     func showAlertFormactivityIndicator(_ title: String) {
     self.Label.text = title
         formactivityIndicator()
     UIApplication.shared.keyWindow?.addSubview(container)
